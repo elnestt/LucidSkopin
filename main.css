@@ -1,0 +1,1020 @@
+
+    /* Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: #ffffff;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 45vh;
+      background-image: url("image.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      position: relative;
+      padding: 40px 0;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 36px;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+    }
+
+    .logo-main {
+      line-height: 1;
+    }
+
+    .sub-logo {
+      font-size: 10px;
+      font-weight: normal;
+      color: #ccc;
+      letter-spacing: 1.5px;
+      line-height: 1.2;
+      margin-top: 8px;
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav a {
+      position: relative;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      padding-bottom: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .nav a::before,
+    .nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      width: 10px;
+      background-color: #00aaff;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      transform-origin: left;
+    }
+
+    .nav a::before {
+      left: 50%;
+      margin-left: -12px;
+    }
+
+    .nav a::after {
+      left: 50%;
+      margin-left: 2px;
+    }
+
+    .nav a:hover::before,
+    .nav a:hover::after,
+    .nav a.active::before,
+    .nav a.active::after {
+      transform: scaleX(1);
+    }
+
+   
+
+    .hero-content-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      text-align: left;
+      max-width: 600px;
+    }
+
+    .intro-text {
+      color: #00aaff;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .hero-content h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: #ccc;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 12px 30px;
+      border: 2px solid transparent;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .btn-primary {
+      background-color: #00aaff;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #0003cc;
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background-color: white;
+      color: #0040ff;
+    }
+
+    /* Burger Menu */
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      position: relative;
+      z-index: 1001;
+    }
+
+    .burger span {
+      height: 3px;
+      width: 25px;
+      background-color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 80px 0;
+      text-align: center;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .features-header {
+      margin-bottom: 60px;
+    }
+
+    .features-subtitle {
+      color: #008ed6;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #222;
+    }
+
+    .double-divider {
+      display: flex;
+      justify-content: left;
+      gap: 10px;
+      margin: 0 auto 50px;
+      
+    }
+
+    .double-divider2 {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 0 auto 50px;
+      
+    }
+
+    .divider-line {
+      width: 25px;
+      height: 2px;
+      background-color: #008ed6;
+      
+    }
+
+    .features-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 45px;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+
+    .feature-item {
+      width: 250px;
+      text-align: center;
+    }
+
+    .icon-wrapper {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 2px solid #e8e8e8;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: border-color 0.3s ease;
+    }
+
+   .feature-item:hover .icon-wrapper,
+   .feature-item:hover .icon-wrapper3 {
+    border-color: #008ed6;
+    }
+
+    .icon-wrapper img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .icon-wrapper3 {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 2px solid #e8e8e8;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: border-color 0.3s ease;
+    }
+
+    .icon-wrapper3:hover {
+      border-color: #008ed6;
+    }
+
+    .icon-wrapper3 img {
+      width: 25px;
+      height: 35px;
+    }
+
+    .feature-item h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .feature-item p {
+      font-size: 14px;
+      color: #777;
+      line-height: 1.6;
+    }
+
+    /* Details Sections */
+    .details-section {
+      padding: 100px 0;
+      background-color: #e3e3e3;
+      color: #333;
+    }
+
+    .details-section:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    .details-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .details-container.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .details-content {
+      flex: 1;
+      max-width: 550px;
+    }
+
+    .details-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .details-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .details-subtitle {
+      color: #008ed6;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .details-title {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      color: #222;
+    }
+
+    .details-text {
+      font-size: 16px;
+      color: #777;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+        /* Оновлені стилі для списку з іконками */
+        .details-list {
+          list-style: none;
+        }
+    
+        .details-list li {
+          position: relative;
+          padding-left: 40px;
+          margin-bottom: 15px;
+          font-size: 16px;
+          color: #555;
+          display: flex;
+          align-items: center;
+        }
+    
+        .details-list li::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 24px;
+          height: 24px;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+    
+        .details-list li:nth-child(1)::before {
+          background-image: url('cup_list.png'); /* Червоний хрестик */
+        }
+    
+        .details-list li:nth-child(2)::before {
+          background-image: url('speedometer_list.png'); /* Червоний хрестик */
+        }
+    
+        .details-list li:nth-child(3)::before {
+          background-image: url('energy_list.png'); /* Зелена галочка */
+        }
+        .details-list li:nth-child(4)::before {
+          background-image: url('mouse_list.png'); /* Зелена галочка */
+        }
+
+
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc; /* або #000 для повністю чорної лінії */
+  margin: 60px 0px; /* регулює відступи зверху і знизу */
+
+
+}
+
+.hero1 {
+  position: relative;
+  background-image: url('background_slick.png'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 200px 15px;
+  height: 600px;
+}
+
+
+.slide {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  z-index: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+
+}
+
+.slider {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+  position: relative;
+  z-index: 1;
+  visibility: visible;
+}
+
+/* Анімації */
+.slide.enter-left {
+  transform: translateX(-100%);
+}
+
+.slide.enter-right {
+  transform: translateX(100%);
+}
+
+.slide.animate-in {
+  animation: slideIn 0.5s forwards;
+}
+
+.slide.animate-out {
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.slide-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 70px;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  
+}
+
+.slide-text-left,
+.slide-text-right {
+  flex: 1;
+  text-align: left;
+  
+}
+
+.slide p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* для WebKit */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-clamp: 3; /* стандартне правило для підтримки, де доступне */
+  box-orient: vertical; /* для ширшої підтримки */
+}
+
+.icon-with-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.icon-with-text img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 5px;
+  flex-shrink: 0;
+}
+
+.icon-title {
+  font-weight: 600;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.icon-description {
+  color: #fafafa;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Add this to your CSS */
+.indicators-container {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #008ed6;
+}
+ /* Оновлені стилі для індикаторів */
+.indicators-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  margin-top: 140px;
+}
+
+.dot:hover,
+.dot.active {
+  background-color: #ffffff;
+  border-color: #adadad;
+}
+
+.dot.active {
+  transform: scale(1.2);
+}
+
+/* Додатковий ефект для активного елемента */
+.dot.active::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+/* Стилі для заголовків слайдера */
+.slider-header {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.slider-subtitle {
+  color: #008ed6;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.slider-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+.hero1 {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+  color: #ffffff;
+}
+
+.promo-panel {
+  background-color: #1c1c1c;
+  padding: 30px 40px;
+  color: white;
+}
+
+.promo-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Для мобільних */
+  gap: 10px;
+}
+
+.promo-text {
+  font-size: 30px;
+  margin: 0;
+  flex: 1;
+  min-width: 200px;
+  margin-left: 100px;
+}
+
+.promo-buttons {
+  display: flex;
+  gap: 15px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  margin-right: 200px;
+}
+
+.btn {
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: #0040ff;
+}
+
+
+.btn-primary {
+  background-color: #00aaff;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0072a2;
+}
+
+/* Стилі для секції Pricing & Plans */
+/* Стилі для секції Pricing & Plans */
+.pricing-plans {
+  padding: 100px 0;
+  background-color: #fff;
+  text-align: center;
+  
+}
+
+.section-subtitle {
+  color: rgb(37, 115, 205);
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 60px; 
+}
+
+.pricing-card {
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0; /* Сіра рамка для всього блоку */
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.featured {
+  border-color: #008ed6;
+}
+
+.plan-name {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0; /* Сіра рамка знизу */
+}
+
+.plan-name h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.price-box {
+  padding: 20px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #e0e0e0; /* Сіра рамка знизу */
+}
+
+.pricing-card:hover .price-box {
+  background-color: #008ed6;
+  border-color: #008ed6; /* Зміна кольору рамки при наведенні */
+}
+
+.pricing-card:hover .price-box .amount,
+.pricing-card:hover .price-box .period {
+  color: #fff;
+}
+
+.price {
+  margin: 0;
+}
+
+.price .amount {
+  font-size: 50px;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.price .period {
+  font-size: 14px;
+  color: #777;
+  transition: color 0.3s ease;
+}
+
+.plan-details {
+  padding: 30px 20px;
+  background-color: #fff;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #777;
+  flex-grow: 1;
+}
+
+.description strong {
+  color: #008ed6;
+  font-weight: 600;
+}
+
+.pricing-card.featured .description strong {
+  color: #fff;
+}
+
+.pricing-card.featured .price-box {
+  background-color: #008ed6;
+  border-color: #008ed6;
+}
+
+.pricing-card.featured .price-box .amount,
+.pricing-card.featured .price-box .period {
+  color: #fff;
+}
+
+.pricing-card.featured .plan-details {
+  background-color: #008ed6;
+  color: #fff;
+}
+
+.pricing-card.featured .description {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 2px solid #008ed6;
+  color: #008ed6;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #008ed6;
+  color: #fff;
+}
+
+.pricing-card.featured .btn-primary {
+  background-color: #fff;
+  color: #008ed6;
+}
+
+.pricing-card.featured .btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Адаптивні стилі */
+@media (max-width: 992px) {
+  .pricing-card {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-card {
+    max-width: 350px;
+    width: 100%;
+  }
+}
+
+
+/* Залиште всі інші існуючі стилі для слайдера без змін */
+
+
+
+    /* Responsive Styles */
+    @media (max-width: 992px) {
+      .features-row {
+        gap: 30px;
+      }
+      
+      .feature-item {
+        width: calc(50% - 30px);
+      }
+
+      .details-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .details-container.reverse {
+        flex-direction: column;
+      }
+
+      .details-content, 
+      .details-image {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .details-list {
+        display: inline-block;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .burger {
+        display: flex;
+      }
+
+      .nav ul {
+        position: absolute;
+        top: 80px;
+        right: 30px;
+        background-color: #111;
+        flex-direction: column;
+        width: 200px;
+        border-radius: 8px;
+        overflow: hidden;
+        display: none;
+        z-index: 1000;
+      }
+
+      .nav ul.show {
+        display: flex;
+      }
+
+      .nav ul li {
+        padding: 15px;
+        border-bottom: 1px solid #222;
+      }
+
+      .header {
+        flex-wrap: wrap;
+      }
+      
+      .features {
+        padding: 60px 0;
+      }
+      
+      .section-title {
+        font-size: 28px;
+      }
+
+      .details-section {
+        padding: 60px 0;
+      }
+
+      .details-title {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .feature-item {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+      }
+      
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
+      
+      .section-title {
+        font-size: 24px;
+      }
+
+      .details-title {
+        font-size: 24px;
+      }
+
+      .details-text {
+        font-size: 14px;
+      }
+    }
